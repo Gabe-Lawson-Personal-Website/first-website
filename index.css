@@ -1,0 +1,93 @@
+html {
+  font-size: 16px;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 0.5em 1em 0.5em;
+  box-shadow: 0px 0px 1px black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.name {
+  float: left;
+  font-weight: bold;
+}
+
+.buttons {
+  float: right;
+  color: black;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: inherit;
+  padding-inline: 6px;
+}
+
+.buttons a.current {
+  border-bottom: solid black 2px;
+}
+
+body {
+  background-color: rgb(228, 250, 249);
+  margin: 0 auto;
+  background-image: url(images/beachsunset.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  margin: 2em;
+  padding: 60px 2px 10px;
+}
+
+main h1 {
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(237, 215, 250);
+  border-radius: 10px;
+}
+
+section {
+  background-color: rgb(245, 177, 117);
+  border-radius: 10px;
+  margin: 3em;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
+  box-shadow: 1px 2px 2px 1px black;
+  color: rgb(30, 0, 64);
+}
+
+section h2 {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+img {
+  width: 200px;
+}
+
+section:nth-child(odd) img {
+  float: left;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 2em;
+}
+
+section:nth-child(even) img {
+  float: right;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 2em;
+}
