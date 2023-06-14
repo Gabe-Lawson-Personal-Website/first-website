@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Site De Gabe - Contact</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="code.js"></script>
   </head>
   <body>
     <header>
@@ -16,5 +17,37 @@
         <a class="current" href="contact.html">CONTACT</a>
       </nav>
     </header>
+
+    <main class="contain">
+      <div class="wrapper">
+        <section class="me-contact">
+          <h2>My Info</h2>
+          <ul>
+            <li>805-425-4075</li>
+            <li>gabriel.lawson@live.fr</li>
+          </ul>
+        </section>
+        <section class="form-grid">
+          <h2>Send Me A Message!</h2>
+          <form action="" id="form">
+            <div>
+              <label for="name" id="lab1">Your Name :</label>
+              <input type="text" class="input-field" id="in1" />
+            </div>
+            <div>
+              <label for="email" id="lab2">Your Email :</label>
+              <input type="email" class="input-field" id="in2" />
+            </div>
+            <div class="full-width">
+              <label for="message" id="lab3">Your Message :</label>
+              <textarea cols="30" rows="7"> </textarea>
+            </div>
+            <div class="full-width">
+              <button type="submit" id="submit">Send It !</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
