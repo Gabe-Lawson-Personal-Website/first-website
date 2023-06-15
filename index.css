@@ -124,25 +124,25 @@ textarea:focus {
 }
 
 input,
-textarea,
-button {
+textarea, button {
   width: 100%;
   border: 1px solid black;
-  padding: 0.5em;
+  padding: 1em 0 1em 0;
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  /* overflow: hidden; */
 }
 
 form > label {
   display: block;
 }
 
-form > div {
-  margin: 5px;
+form div {
+  margin: 0;
 }
 
 .full-width {
@@ -150,48 +150,16 @@ form > div {
 }
 
 button {
+  width: 100%;
+  font-weight: bold;
   border: none;
   background-color: white;
   box-shadow: inset 0 0 0 0 darkmagenta;
-  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 button:hover {
-  box-shadow: inset 600px 0 0 0 darkmagenta;
+  background-color: darkmagenta;
+  transition: 0.4s;
   color: aliceblue;
 }
-
-/* .grid-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "lab1 in1"
-    "lab2 in2"
-    "lab3 message";
-  gap: 5px;
-}
-
-#lab1 {
-  grid-area: lab1;
-}
-
-#in1 {
-  grid-area: in1;
-}
-
-#lab2 {
-  grid-area: lab2;
-}
-
-#in2 {
-  grid-area: in2;
-}
-
-#lab3 {
-  grid-area: lab3;
-}
-
-#message {
-  grid-area: message;
-} */
