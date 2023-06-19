@@ -161,19 +161,19 @@ img {
   }
 }
 
-@media screen and (min-width: 375px) {
-  .buttons a {
-    padding-inline: 10px;
-  }
-}
-
 @media screen and (min-width: 426px) {
   header {
-    font-size: 1.5em;
+    font-size: 1em;
+    padding: 0.5em 0.4em 0.5em;
   }
 
-  .buttons {
-    text-align: center;
+  .name {
+    font-size: 20px !important;
+  }
+
+  .buttons a {
+    padding-inline: 3px;
+    font-size: 15px;
   }
 
   .name {
@@ -195,6 +195,15 @@ img {
     margin: auto 10px;
   }
 
+  img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   section:nth-child(odd) img {
     float: left;
     width: 200px;
@@ -209,5 +218,67 @@ img {
     height: auto;
     border-radius: 20px;
     margin-left: 2em;
+  }
+}
+@media screen and (min-width: 769px) {
+  header {
+    /* font-size: 1.5rem; */
+    padding: 1em 2em 1em;
+  }
+
+  .name {
+    font-size: 2em !important;
+  }
+
+  .buttons a {
+    padding-inline: 10px;
+    font-size: 1.5em;
+  }
+
+  .name {
+    font-size: 29px;
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section {
+    margin: 50px 15vw;
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
+  main h1 {
+    margin: auto 10vh;
+  }
+
+  section:nth-child(odd) img {
+    float: left;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 2em;
+  }
+
+  section:nth-child(even) img {
+    float: right;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section {
+    margin: 50px 20vw;
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
+  main h1 {
+    margin: auto 20vh;
   }
 }
